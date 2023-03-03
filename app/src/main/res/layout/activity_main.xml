@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="204dp"
+        android:layout_height="65dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="@string/label"
+        android:textStyle="italic" />
+    <EditText
+        android:layout_below="@+id/label"
+        android:id="@+id/Textbox"
+        android:layout_marginTop="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:lines="10"
+        android:scrollHorizontally="true"
+        android:scrollbars="vertical"
+        android:hint="@string/hint"
+        android:textSize="15dp"
+
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:id="@+id/calculate"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/Textbox"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calc"
+        android:onClick="calculate"
+    />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/calculate"
+        android:layout_marginTop="42dp"
+        android:layout_centerHorizontal="true"
+        android:text="" />
+</RelativeLayout>
